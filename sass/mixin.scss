@@ -1,0 +1,26 @@
+@mixin respond-to($media, $is-media-query-fallback: false) {
+  $responsive-width-handhelds: 320px !default;
+  $responsive-width-wide-screens: 1024px !default;
+
+  // Add fallback css for browsers without media query support
+  @if $is-media-query-fallback {
+    .no-mediaqueries & {
+      @content;
+    }
+  }
+
+  // Add css
+  @if $media == handhelds {
+    @media only screen and (max-width: $responsive-width-handhelds) {
+      @content;
+    }
+  } @else if $media == medium-screens {
+    @media only screen and (min-width: $responsive-width-handhelds + 1) and (max-width: $responsive-width-wide-screens - 1) {
+      @content;
+    }
+  } @else if $media == wide-screens {
+    @media only screen and (min-width: $responsive-width-wide-screens) {
+      @content;
+    }
+  }
+}
