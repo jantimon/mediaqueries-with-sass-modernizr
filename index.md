@@ -5,8 +5,6 @@ title: Media queries with Sass and Modernizr
 
 ### Media queries with Sass and Modernizr
 
-Live demo: http://jantimon.github.io/mediaqueries-with-sass-modernizr/
-
 This project demonstrates the synergy of Modernizr and Sass when using media queries.
 
 ## SCSS in action
