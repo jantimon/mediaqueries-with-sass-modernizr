@@ -1,0 +1,5 @@
+name: Jekyll Site
+pygments: true
+source:      .
+sass: true
+include: ['sass/_custom.scss', 'sass/demo.scss' ]
