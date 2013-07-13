@@ -25,8 +25,8 @@ jQuery(function($){
 		$.getScript("javascripts/shCore.js", function(){
 			$.when(
 				$.getScript("javascripts/shBrushJScript.js"),
-				$.getScript("javascripts/shBrushCSS.js"),
-				$.getScript("javascripts/shBrushSASS.js")				
+				$.getScript("javascripts/shBrushCss.js"),
+				$.getScript("javascripts/shBrushSass.js")				
 			).done(function(){
 				SyntaxHighlighter.highlight();
 			});
