@@ -1,0 +1,33 @@
+@import "mixin.scss";
+
+// Max width for handhelds:
+$responsive-width-handhelds: 450px;
+
+#navigation {
+
+  background-color: white;
+  padding: 1em;
+
+  // Default width
+  width: 100%;
+
+  // Add styles wide-screens and for 
+  // browsers without media query support
+  @include respond-to(wide-screens, true) {
+    float: right;
+    width: 400px;
+    height: 137px;
+  }
+  
+  // Add styles for handhelds but not for
+  // browsers without media query support
+  @include respond-to(medium-screens, false) {
+  	text-align: center;
+  }
+  @include respond-to(handhelds) {
+    a {
+      display: block;
+      width: 100%;
+    }
+  }
+}
