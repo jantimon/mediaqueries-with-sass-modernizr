@@ -13,7 +13,7 @@ $responsive-width-handhelds: 450px;
 
   // Add styles wide-screens and for 
   // browsers without media query support
-  @include respond-to(wide-screens, true) {
+  @include respond-to(wide-screens, no-media-support) {
     float: right;
     width: 400px;
     height: 137px;
@@ -21,7 +21,7 @@ $responsive-width-handhelds: 450px;
   
   // Add styles for handhelds but not for
   // browsers without media query support
-  @include respond-to(medium-screens, false) {
+  @include respond-to(medium-screens, tablets) {
   	text-align: center;
   }
   @include respond-to(handhelds) {
