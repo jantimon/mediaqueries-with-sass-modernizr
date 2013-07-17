@@ -1,6 +1,6 @@
 @import "mixin.scss";
 
-// Max width for handhelds:
+// Set the max width for handhelds:
 $responsive-width-handhelds: 450px;
 
 #navigation {
@@ -19,11 +19,12 @@ $responsive-width-handhelds: 450px;
     height: 137px;
   }
   
-  // Add styles for handhelds but not for
-  // browsers without media query support
-  @include respond-to(medium-screens, tablets) {
-  	text-align: center;
+  // Add styles only for medium-screens
+  @include respond-to(medium-screens) {
+    text-align: center;
   }
+  
+  // Add styles only for tablets
   @include respond-to(handhelds) {
     a {
       display: block;
