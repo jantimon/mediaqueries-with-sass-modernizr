@@ -1,28 +1,28 @@
 #navigation {
-    background-color: white;
-    padding: 1em;
-    width: 100%;
+  background-color: white;
+  padding: 1em;
+  width: 100%;
 }
-.no-mediaqueries #navigation {
+@media only screen and (min-width: 1024px) {
+  #navigation {
     float: right;
     width: 400px;
     height: 137px;
+  }
 }
-@media only screen and (min-width: 1024px) {
-    #navigation {
-        float: right;
-        width: 400px;
-        height: 137px;
-    }
+.no-mediaqueries #navigation {
+  float: right;
+  width: 400px;
+  height: 137px;
 }
 @media only screen and (min-width: 451px) and (max-width: 1023px) {
-    #navigation {
-        text-align: center;
-    }
+  #navigation {
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 450px) {
-    #navigation a {
-        display: block;
-        width: 100%;
-    }
+  #navigation a {
+    display: block;
+    width: 100%;
+  }
 }
