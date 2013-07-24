@@ -10,6 +10,13 @@
     height: 137px;
   }
 }
+@media only screen and (min-width: 451px) and (max-width: 1023px) {
+  #navigation {
+    float: right;
+    width: 400px;
+    height: 137px;
+  }
+}
 .no-mediaqueries #navigation {
   float: right;
   width: 400px;
@@ -17,7 +24,7 @@
 }
 @media only screen and (min-width: 451px) and (max-width: 1023px) {
   #navigation {
-    text-align: center;
+    float: left;
   }
 }
 @media only screen and (max-width: 450px) {
