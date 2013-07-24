@@ -11,20 +11,20 @@ $responsive-width-handhelds: 450px;
   // Default width
   width: 100%;
 
-  // Add styles wide-screens and for 
-  // browsers without media query support
-  @include respond-to(wide-screens, no-media-support) {
+  // Add styles for wide-screens, medium-screens
+  // and for browsers without media query support
+  @include respond-to(wide-screens, medium-screens, no-media-support) {
     float: right;
     width: 400px;
     height: 137px;
   }
-  
+
   // Add styles only for medium-screens
   @include respond-to(medium-screens) {
-    text-align: center;
+    float: left;
   }
-  
-  // Add styles only for tablets
+
+  // Add styles only for mobile handhelds
   @include respond-to(handhelds) {
     a {
       display: block;
